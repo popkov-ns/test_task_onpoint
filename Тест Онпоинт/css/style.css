@@ -180,6 +180,35 @@ button:focus {
     color: #fff;
 }
 
+.link-arrow{
+    display: block;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    margin: 10px auto;
+}
+
+.arrow:before, .arrow:after{
+    content: "";
+    height: 5px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    background: #f6f6f6;
+}
+
+.arrow:before{
+    left: 0;
+    transform: skew(0deg, 45deg);
+    border-radius: 10px 0 0 50% ;
+}
+
+.arrow:after{
+    right: 0;
+    transform: skew(0deg, -45deg);
+    border-radius: 0 10px 50% 0;
+}
+
 /* The third block (Main) */
 .main{
     background-image: url(../img/second-slide.jpg);
